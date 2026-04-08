@@ -1,0 +1,34 @@
+components:
+- components:
+  - components:
+    - name: repeating_panel_kurse
+      properties: {item_template: Frontend.RowTemplate1}
+      type: RepeatingPanel
+    layout_properties: {grid_position: 'CZRDSN,LXYEFL'}
+    name: data_grid_kurse
+    properties:
+      columns:
+      - {data_key: Bezeichnung, id: JKSDUP, title: Kurs}
+      - {data_key: Wochentag, id: VJQQOR, title: Wochentag}
+      - {data_key: Uhrzeit, id: OJLQEN, title: Uhrzeit}
+      - {data_key: Name, id: DDLRMJ, title: Trainer}
+      - {data_key: Anz_Teilnehmer, id: RIGMNE, title: Teilnehmer}
+      - {data_key: column_1, id: SSBYJK, title: Anmelden}
+    type: DataGrid
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components: []
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_1
+  properties: {text: Kurse}
+  type: Label
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

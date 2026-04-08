@@ -1,0 +1,35 @@
+components:
+- components:
+  - components:
+    - name: repeating_panel_1
+      properties: {item_template: Anmelden.RowTemplate2}
+      type: RepeatingPanel
+    layout_properties: {grid_position: 'UCHFXU,CIASGY'}
+    name: data_grid_1
+    properties:
+      columns:
+      - {data_key: Name, id: JKSDUP, title: Mitglied}
+      - {data_key: column_3, id: OJLQEN, title: Anmelden}
+    type: DataGrid
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- components:
+  - event_bindings: {}
+    layout_properties: {}
+    name: button_1
+    properties: {text: Back}
+    type: Button
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_1
+  properties: {text: Anmelden}
+  type: Label
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
